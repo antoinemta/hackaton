@@ -1,1 +1,2 @@
-/* delete this file */
+/_ delete this file _/
+/\*
