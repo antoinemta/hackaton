@@ -129,8 +129,9 @@ export class MapContainer extends Component {
             className={this.props.className}
           >
             <ModalHeader toggle={this.appearModal} />
-            <ModalBody>
+            <ModalBody className="d-flex justify-content-center">
               <img src="witch.jpeg" className="mr-2" alt="" />
+              <br />
               Haha ! You have got {this.state.nbr + " "}
               {this.state.candie + " "}!
             </ModalBody>
