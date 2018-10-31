@@ -35,33 +35,29 @@ export class MapContainer extends Component {
   }
 
   componentDidMount() {
-    fetch("http://192.168.1.16:8080/street")
-      /* "http://192.168.1.29:8000"*/
+    fetch("http://192.168.1.16:8000/street")
       .then(response => response.json())
       .then(data => {
         console.log(data);
         this.setState({
-          adress: data.adress
+          adress: data
         });
       });
-  }
 
-  onMarkerClick(event) {}
+    fetch("http://192.168.1.16:8000/searchCandy")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      });
+  }
 
   recolt(event) {
     let adress = [];
     for (let i = 0; i < this.state.adress.length; i++) {
       if (this.state.adress[i].latitude !== event.position.lat) {
         adress.push({
-          id: this.state.adress[i].id,
-          name: this.state.adress[i].name,
-          housenumber: this.state.adress[i].housenumber,
-          street: this.state.adress[i].street,
-          postcode: this.state.adress[i].postcode,
-          city: this.state.adress[i].city,
           latitude: this.state.adress[i].latitude,
-          longitude: this.state.adress[i].longitude,
-          type: this.state.adress[i].type
+          longitude: this.state.adress[i].longitude
         });
       }
     }

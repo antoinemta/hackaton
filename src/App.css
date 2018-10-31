@@ -113,3 +113,22 @@ h1 {
   height: 225px;
   margin-left: 190px;
 }
+
+@media (max-width: 800px) {
+  .empty,
+  .divTitle {
+    display: none;
+  }
+
+  .nnn,
+  .square {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .stats,
+  .descriptif {
+    overflow: visible;
+  }
+}

@@ -48,19 +48,23 @@ class Homepage extends Component {
     </div>*/}
             </div>
           </div>
-          <div className="row d-flex justify-content-center mt-5">
-            <div className="col-6 square d-flex justify-content-center">
-              <div className="col-9 descriptif p-4">
+          <div className="row nnn d-flex justify-content-center mt-5">
+            <div className="col-md-6 square d-flex justify-content-center">
+              <div className="col-md-9 descriptif p-4">
                 " You can enter your adress and we will return you the houses
                 that you can visit around your house and get candy ! You will
                 can see the candy that you recolted in your candydex ! "<br />
-                <img src="citrouill.png" className="citrouilleImg" alt="" />
+                <img
+                  src="citrouill.png"
+                  className="citrouilleImg  d-none d-sm-block"
+                  alt=""
+                />
               </div>
             </div>
-            <div className="col-6 square d-flex justify-content-center">
-              <div className="col-7 stats">
+            <div className="col-md-6 square d-flex justify-content-center">
+              <div className="col-md-7 stats">
                 {" "}
-                <div className="lineCenter col-12">You have collected :</div>
+                <div className="lineCenter col-md-6">You have collected :</div>
                 {this.state.candy.map(data => (
                   <div className="line">
                     {data.candy} : {data.Nmbr}

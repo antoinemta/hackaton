@@ -9,13 +9,11 @@ class Header extends Component {
     };
   }
 
-  componentDidMount() {}
-
   render() {
     return (
       <header className="row">
         <div className="header d-flex justify-content-center col-12">
-          <div className="col-2" />
+          <div className="col-2 empty" />
           <div className="col-8 pt-5 divTitle">
             <span className="title">Welcome to CandyGo!</span>
           </div>
