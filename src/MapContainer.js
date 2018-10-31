@@ -8,16 +8,16 @@ export class MapContainer extends Component {
     this.state = {
       adress: [],
       candy: [
-        "haribo",
-        "chamalo",
-        "carambar",
-        "smarties",
-        "sucettes",
-        "reglis",
-        "malabar",
-        "dragibus",
-        "kinder",
-        "betises"
+        "Herman Candy tradition",
+        "Flocos de Neve",
+        "O'Tablo",
+        "Bonbons fourrés au miel",
+        "Barbe à papa",
+        "Bonbons Suisses",
+        "Haribo Ositos De Oro",
+        "World Mix",
+        "Werther's",
+        "Kleine Rode"
       ],
       candyAdded: [],
       candyNmbrAdded: [],
@@ -38,7 +38,6 @@ export class MapContainer extends Component {
     fetch("http://192.168.1.16:8000/street")
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         this.setState({
           adress: data
         });
@@ -46,9 +45,7 @@ export class MapContainer extends Component {
 
     fetch("http://192.168.1.16:8000/searchCandy")
       .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      });
+      .then(data => {});
   }
 
   recolt(event) {

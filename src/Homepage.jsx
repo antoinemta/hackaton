@@ -64,7 +64,7 @@ class Homepage extends Component {
             <div className="col-md-6 square d-flex justify-content-center">
               <div className="col-md-7 stats">
                 {" "}
-                <div className="lineCenter col-md-6">You have collected :</div>
+                <div className="lineCenter col-12">You have collected :</div>
                 {this.state.candy.map(data => (
                   <div className="line">
                     {data.candy} : {data.Nmbr}
