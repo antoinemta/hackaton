@@ -18,15 +18,17 @@ class StreetController extends AbstractController
     {
         // Request Doctrine
         $repository = $this->getDoctrine()->getRepository(Street::class);
-        $street = $repository->findAll();
+        $streets = $repository->findAll();
 
-        // Create Response
+        $streetToEncode = [];
+        foreach ($streets as $street) {
+            $streetToEncode[] = $street->getPositions();
+        }
+
         $response = new Response();
         $response->headers->set('Access-Control-Allow-Origin', '*');
 
-        // Response conversion to json
-        return $response = $this->json($street);
-
+        return $response = $this->json($streetToEncode);
     }
 
     /**
@@ -40,7 +42,7 @@ class StreetController extends AbstractController
             ]
         );
 
-        $search = '?lon=3.065&lat=50.630&type=street';
+        $search = '?lon=3.060897&lat=50.62944&type=street';
 
         // Send a request
         $response = $client->request('GET', $search );
