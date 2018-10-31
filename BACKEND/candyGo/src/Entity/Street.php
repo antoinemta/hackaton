@@ -56,6 +56,15 @@ class Street
      */
     private $type;
 
+    public function getPositions(): ?array
+    {
+        $array = [
+            'longitude' => $this->longitude,
+            'latitude' => $this->latitude
+        ];
+        return $array;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

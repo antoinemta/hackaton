@@ -31,8 +31,8 @@ class CandyController extends AbstractController
             $products = $json_data->products;
 
             for ($j = 0; $j < $randomCandies; $j++) {
-                if (!empty($products[$j]->product_name_fr))
-                    $candies[$products[$j]->product_name_fr] = $products[$j]->id;
+                if (!empty($products[$j]->product_name))
+                    $candies[$products[$j]->product_name] = $products[$j]->id;
             }
         }
         $response = new Response();
