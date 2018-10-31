@@ -6,6 +6,8 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-json": "*",
+
+        "api-platform/api-pack": "^1.1",
         "guzzlehttp/guzzle": "^6.3",
         "nelmio/cors-bundle": "^1.5",
         "symfony/console": "*",
