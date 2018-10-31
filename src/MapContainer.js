@@ -35,12 +35,11 @@ export class MapContainer extends Component {
   }
 
   componentDidMount() {
-    fetch(
-      "http://192.168.1.16:8080"
+    fetch("http://192.168.1.16:8080/street")
       /* "http://192.168.1.29:8000"*/
-    )
       .then(response => response.json())
       .then(data => {
+        console.log(data);
         this.setState({
           adress: data.adress
         });
