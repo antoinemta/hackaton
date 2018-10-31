@@ -1,32 +1,115 @@
-.App {
+.divBlack {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "mypolice";
+  src: url("HallowenInline.ttf");
+}
+
+@font-face {
+  font-family: "mypolice2";
+  src: url("Latchboy.ttf");
+}
+
+@font-face {
+  font-family: "mypolice3";
+  src: url("LunacyMore.ttf");
+}
+
+.title {
+  font-family: mypolice;
+  font-size: 4em;
+  font-weight: bold;
+  margin-left: 17%;
+}
+
+.candydex {
+  text-align: center;
+  color: white;
+  font-family: mypolice;
+  font-size: 6em;
+}
+
+.dot {
+  font-family: mypolice;
+}
+
+.header {
+  height: 220px;
+  background: url("bgheader.png");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.buttonBonbondex {
+  background-color: black;
+  border: 4px yellow solid;
+  color: yellow;
+  height: 80px;
+  width: 140px;
+  border-radius: 35px 35px 35px 35px;
+}
+
+h1 {
+  margin-left: 200px;
+}
+
+.body {
+  background-color: black;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.descriptif {
+  border: 1px white solid;
+  height: 400px;
+  color: white;
+  font-size: 1.5em;
+  font-family: mypolice3;
+  overflow: hidden;
+}
+
+.stats {
+  border: 1px white solid;
+  height: 600px;
+}
+
+.line {
+  color: white;
+  font-family: mypolice3;
+  font-size: 2.5em;
+  margin-bottom: -20px;
+}
+
+.lineCenter {
+  color: white;
+  font-family: mypolice3;
+  font-size: 2.5em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.container-fluid {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.neuf {
+  border: 1px white solid;
+}
+
+.BtnImg {
+  width: 170px;
+  height: 170px;
+}
+
+.dialect {
+  font-size: 5em;
+  font-family: mypolice2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.citrouilleImg {
+  width: 225px;
+  height: 225px;
+  margin-left: 190px;
 }
